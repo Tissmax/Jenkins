@@ -10,7 +10,7 @@ pipeline {
 
         stage('Redémarrer Apache2') {
             steps {
-                sh 'sudo systemctl restart apache2'
+                sh 'sudo systemctl restart httpd'
             }
         }
     }
