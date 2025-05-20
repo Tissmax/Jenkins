@@ -1,37 +1,31 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page d'accueil</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f5f5f5;
-      color: #333;
-    }
-    header, footer {
-      background-color: #eee;
-      padding: 20px;
-      text-align: center;
-    }
-    main {
-      margin-top: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Bienvenue sur mon site !!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            text-align: center;
+            padding-top: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+            font-size: 1.2em;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Bienvenue sur mon site</h1>
-  </header>
+    <h1>Bienvenue sur mon site web déployé avec Jenkins !</h1>
+    <p>Ce fichier HTML a été copié automatiquement par Jenkins dans /var/www/html.</p>
+    <p>Date de déploiement : <strong><span id="deployDate"></span></strong></p>
 
-  <main>
-    <p>Ceci est une page HTML de base.</p>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 MonSite. Tous droits réservés.</p>
-  </footer>
+    <script>
+        document.getElementById("deployDate").textContent = new Date().toLocaleString();
+    </script>
 </body>
 </html>
