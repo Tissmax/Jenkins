@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Copier index.html') {
             steps {
-                sh 'sudo cp index.html /var/www/html/index.html'
+                sh 'sudo cp index.html /srv/http/index.html'
             }
         }
 
